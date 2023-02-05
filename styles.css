@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Overpass', sans-serif;
+    box-sizing: border-box;
+    transition: .2s all ease;
+}
+:root{
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 35%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+    --orange: hsl(25, 97%, 53%);
+    --fw1: 400;
+    --fw2: 700;
+    --fsize: 15px;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: var(--very-dark-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    background-color: var(--dark-blue);
+    padding: 20px;
+    border-radius: 1rem;
+    width: 21rem;
+    color: #fff;
+}
+.img{
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 50%;
+    background-color: var(--medium-grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: .8rem;
+}
+.img1{
+    height: .8rem;
+}
+.content{
+    margin: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+h2{
+    font-size: 24px;
+    font-weight: var(--fw2);
+}
+p{
+    color: var(--light-grey);
+    line-height: 1.2rem;
+    font-size: var(--fsize);
+    font-weight: var(--fw1);
+}
+.numbers{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+.no{
+    background-color: var(--medium-grey);
+    color: var(--light-grey);
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.no:hover{
+    color: #fff;
+    background-color: var(--orange);
+}
+.active{
+    background: var(--light-grey);
+    color: #fff;
+}
+button{
+    border: none;
+    border-radius: 1.5rem;
+    padding: .8rem;
+    width: 100%;
+    color: #fff;
+    background: var(--orange);
+    text-transform: uppercase;
+    font-weight: var(--fw2);
+    letter-spacing: .08rem;
+    cursor: pointer;
+}
+button:hover{
+    color: var(--orange);
+    background: #fff;
+}
+#card2{
+    text-align: center;
+    padding: 2rem 1.5rem;
+    display: none;
+}
+.text-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.colored-text{
+    background-color: var(--medium-grey);
+    padding: .5rem .8rem;
+    margin-top: 1rem;
+    width: max-content;
+    border-radius: 1.5rem;
+
+}
+.colored{
+    color: var(--orange);
+}
+@media screen and (max-width: 420px){
+    .container{
+        padding: 0 1rem;
+    }
+    .card{
+        width: 100%;
+    }
+    p{
+        font-size: 18px;
+    }
+    h2{
+        font-size: 28px;
+    }
+}
+
+
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
