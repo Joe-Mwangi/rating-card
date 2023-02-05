@@ -75,6 +75,7 @@ p{
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    transition: all linear 300ms;
 }
 .no:hover{
     color: #fff;
@@ -95,6 +96,7 @@ button{
     font-weight: var(--fw2);
     letter-spacing: .08rem;
     cursor: pointer;
+    transition: all ease-in-out 300ms;
 }
 button:hover{
     color: var(--orange);
@@ -120,7 +122,7 @@ button:hover{
 .colored{
     color: var(--orange);
 }
-@media screen and (max-width: 420px){
+@media screen and (max-width: 600px){
     .container{
         padding: 0 1rem;
     }
@@ -134,8 +136,3 @@ button:hover{
         font-size: 28px;
     }
 }
-
-
-
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
